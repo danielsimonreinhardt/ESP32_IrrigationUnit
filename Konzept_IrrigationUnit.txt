@@ -1,0 +1,32 @@
+- Gehäuse IP65
+- ESP32
+- Hilfsversorgung 24V (auswählbar über Jumper, ob über 230V versorgt)
+- Relais-Schaltkontakte für 230V Versorgung
+- 230V-Versorgung: Onboard 12V-Netzteil, Spannungsüberwachung isoliert, Schmelzsicherung
+
+- Sensoren: 
+	- Bodenfeuchte 2x
+	- Bodentemperatur 2x (oneWire)
+	- Wassertemperatur 1x
+	- Lichtsensor 1x (i2c 1)
+	- Wasserstandssensor 1x
+
+- geschalteter Ausgang für 12V Wasserpumpe 4x
+- Stromüberwachung gemeinsam (i2c 2)
+
+- Programmierschnittstelle für FTDI
+
+
+Funktion:
+- Bewässern, wenn Bodenfeuchtigkeit < x
+- Bewässerung sperren, 
+	wenn zu kalt (Frostschutz) oder
+	wenn zu warm
+	wenn zu hell (direkte Sonneneinstrahlung) oder
+	wenn kein Wasser im Tank oder
+	wenn Pumpe defekt
+- Information/Warnung:
+	kein Wasser im Tank
+	Pumpe defekt
+
+	
